@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./static/Inter-Bold.ttf") format("OpenType");
+    font-size: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./static/Inter-Light.ttf") format("OpenType");
+    font-size: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0;
+    background: var(--bg-3, #fafbfc);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* Header - section */
+nav {
+    height: 133px;
+    padding: 40px 0;
+    background: var(--bg-3, #fafbfc);
+}
+
+.logo-wrapper,
+.btn-wrapper {
+    width: calc(100% * 0, 15);
+    display: inline-block;
+}
+
+.navigation-links {
+    width: calc(100% * 0.7);
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: top;
+    text-align: end;
+}
+.navigation-links li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navigation-links li a {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.btn-wrapper {
+    vertical-align: top;
+}
+
+button {
+    width: 179px;
+    height: 57px;
+    border-radius: 10px;
+    background: var(--primary-1, #377dff);
+    color: var(--text-5, #fff);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero section */
+#hero-section h1 {
+    margin-top: 108px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: var(--text-1, #323b4b);
+    font-family: "Inter";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73px;
+}
+
+.hero-text {
+    text-align: center;
+    color: var(--text-3, #8a94a6);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 57px;
+}
+
+.box {
+    width: calc((100% - 64px) / 3);
+    border-radius: 15px;
+    background: var(--bg-4, #fff);
+    display: inline-block;
+    padding: 41px 31px;
+}
+
+.box-1,
+.box-2 {
+    margin-right: 32px;
+}
+
+.box-1 {
+    border: 2px solid rgb(242, 6, 242);
+}
+
+.box img {
+    margin-bottom: 36px;
+}
+.box h2 {
+    color: var(--text-1, #323b4b);
+    font-family: "Inter";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 16px;
+}
+.box p {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: start;
+    margin-bottom: 16px;
+}
+
+.box a {
+    color: var(--primary-1, #377dff);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+}
+
+/* Form Section */
+
+.form-section_content {
+    text-align: center;
+    position: relative;
+}
+.form-header {
+    margin-top: 142px;
+    margin-bottom: 28px;
+    color: var(--text-1, #323b4b);
+    font-family: "Inter";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+}
+
+.form-p {
+    color: var(--text-3, #8a94a6);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 52px;
+}
+.form-inputs-wrapper {
+    text-align: center;
+}
+
+.form-input {
+    width: 391px;
+    height: 65px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    background: var(--bg-4, #fff);
+    padding: 22px 25px;
+    color: var(--text-4, #b0b7c3);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.form-input-1,
+.form-input-3 {
+    margin-right: 33px;
+    margin-bottom: 43px;
+}
+
+.textarea {
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    background: var(--bg-4, #fff);
+    color: var(--text-4, #b0b7c3);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 24px;
+    margin-bottom: 43px;
+}
+
+.checkbox {
+    width: 34px;
+    height: 33px;
+    background-color: var(--secondary-1, #e5f1ff);
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+}
+
+.checkboxText {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 17px;
+    position: absolute;
+    left: 260px;
+}
+
+#form-section button {
+    position: absolute;
+    right: 200px;
+}
+
+/* Footer */
+
+footer {
+    padding: 142px 0;
+}
+
+.footer__brand,
+.footer__home,
+.footer__pages,
+.footer__blog,
+.footer__portfolio {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer__brand {
+    width: calc((100% - 352px) * 0.3);
+}
+.footer > *:not(:first-child) {
+    width: calc(((100% - 352px) * 0.7) / 4);
+}
+
+.footer > *:not(:last-child) {
+    margin-right: 88px;
+}
+.footer-text {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 28px;
+}
+dt {
+    color: var(--text-1, #323b4b);
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 28px;
+}
+
+dd {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 19px;
+}
+
+.footer__brand img {
+    margin-bottom: 28px;
+}
+
+.last-text {
+    color: var(--text-3, #8a94a6);
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 62px;
+}
