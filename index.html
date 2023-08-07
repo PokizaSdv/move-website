@@ -7,26 +7,22 @@
         <title>Move-Webpage</title>
     </head>
     <body>
-        <section id="header-section">
+        <header>
             <div class="container">
+                <img src="./assets/Logo.png" alt="logo" />
                 <nav>
-                    <div class="logo-wrapper">
-                        <img src="./Logo.png" alt="logo" />
-                    </div>
-                    <div class="navigation-links">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Page</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Portfolio</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-wrapper">
-                        <button>Get started</button>
-                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Page</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
+
+                    <button>Get started</button>
                 </nav>
             </div>
-        </section>
+        </header>
+
         <section id="hero-section">
             <div class="container">
                 <h1>We're here to help</h1>
@@ -37,7 +33,7 @@
                 </p>
                 <div class="boxes-wrapper">
                     <div class="box box-1">
-                        <img src="./icon.png" alt="email icon" />
+                        <img src="./assets/icon.png" alt="email icon" />
                         <h2>Email Us</h2>
                         <p>
                             Ask us a question by email and we will respond
@@ -46,7 +42,7 @@
                         <a href="">Leave a message </a>
                     </div>
                     <div class="box box-2">
-                        <img src="./icon-2.png" alt="location icon" />
+                        <img src="./assets/icon-2.png" alt="location icon" />
                         <h2>Drop In Us</h2>
                         <p>
                             You can meet us at our office and discuss the
@@ -55,7 +51,7 @@
                         <a href="">Get Directions </a>
                     </div>
                     <div class="box box-3">
-                        <img src="./icon-3.png" alt="call icon" />
+                        <img src="./assets/icon-3.png" alt="call icon" />
                         <h2>Call any time</h2>
                         <p>
                             Call us if your question requires an immediate
@@ -68,78 +64,73 @@
         </section>
         <section id="form-section">
             <div class="container">
-                <div class="form-section_content">
-                    <h2 class="form-header">Leave a Message</h2>
-                    <p class="form-p">
-                        Contact us if you have any questions about our company
-                        or products. We will try <br />
-                        to provide an answer within a few days.
-                    </p>
-                    <div class="form-inputs_wrapper">
-                        <input
-                            class="form-input form-input-1"
-                            type="text"
-                            placeholder="Your Name"
-                        />
+                <h2 class="form-header">Leave a Message</h2>
+                <p class="form-p">
+                    Contact us if you have any questions about our company or
+                    products. We will try <br />
+                    to provide an answer within a few days.
+                </p>
+                <div class="form-inputs_wrapper">
+                    <input
+                        class="form-input form-input-1"
+                        type="text"
+                        placeholder="Your Name"
+                    />
 
-                        <input
-                            class="form-input form-input-2"
-                            type="email"
-                            placeholder="Email Address"
-                        />
-                        <br />
+                    <input
+                        class="form-input form-input-2"
+                        type="email"
+                        placeholder="Email Address"
+                    />
+                    <br />
 
-                        <input
-                            class="form-input form-input-3"
-                            type="text"
-                            placeholder="Company Name"
-                        />
+                    <input
+                        class="form-input form-input-3"
+                        type="text"
+                        placeholder="Company Name"
+                    />
 
-                        <input
-                            class="form-input form-input-4"
-                            type="number"
-                            placeholder="Contact Number"
-                        />
-                        <br />
+                    <input
+                        class="form-input form-input-4"
+                        type="number"
+                        placeholder="Contact Number"
+                    />
+                    <br />
 
-                        >
-                        <textarea
-                            class="textarea"
-                            placeholder="How can we help"
-                            name="comments"
-                            id="commentsTextarea"
-                            cols="68"
-                            rows="15"
-                        ></textarea>
-                        <br />
-                        <p class="checkboxText">
-                            I agree to the Terms & Conditions
-                        </p>
-                        <label for="termCheckbox"></label>
-                        <input
-                            class="checkbox"
-                            type="checkbox"
-                            name="isChecked"
-                            id="termCheckbox"
-                        />
-                        <button>Submit</button>
-                    </div>
+                    >
+                    <textarea
+                        placeholder="How can we help"
+                        cols="56"
+                        rows="14"
+                    ></textarea>
+                </div>
+                <div class="form-checkbox_wrapper">
+                    <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="isChecked"
+                        id="termCheckbox"
+                    /><label for="termCheckbox">
+                        I agree to the Terms & Conditions</label
+                    >
+
+                    <button>Submit</button>
                 </div>
             </div>
         </section>
         <footer>
             <div class="container">
-                <div class="footer">
+                <div class="footer-content">
                     <div class="footer__brand">
-                        <img src="./Logo.png" alt="Logo" />
+                        <img src="./assets/Logo.png" alt="Logo" />
                         <p class="footer-text">
                             Move - Multipurpose Design Template will help you
                             develop your website design.
                         </p>
-                        <img src="./Dribbble.png" alt="" />
-                        <img src="./Twitter.png" alt="" />
-                        <img src="./Facebook.png" alt="" />
-                        <img src="./YouTube.png" alt="" />
+                        <img src="./assets/Dribbble.png" alt="" />
+                        <img src="./assets/Twitter.png" alt="" />
+                        <img src="./assets/Facebook.png" alt="" />
+                        <img src="./assets/YouTube.png" alt="" />
                     </div>
 
                     <div class="footer__home">
@@ -178,6 +169,7 @@
                         </dl>
                     </div>
                 </div>
+
                 <p class="last-text">
                     © 2019-2020 Move Multipurpose Design Template.
                 </p>
