@@ -4,12 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./media-query.css" />
         <title>Move-Webpage</title>
     </head>
     <body>
-        <header>
+        <section id="header">
             <div class="container">
-                <img src="./assets/Logo.png" alt="logo" />
+                <img src="./assets/Logo.png" alt="logo" class="logo" />
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
@@ -21,18 +22,18 @@
                     <button>Get started</button>
                 </nav>
             </div>
-        </header>
+        </section>
 
         <section id="hero-section">
             <div class="container">
                 <h1>We're here to help</h1>
                 <p class="hero-text">
                     Contact us if you have any questions about our company or
-                    products. We will try to <br />provide an answer within a
-                    few days.
+                    products. We will try to provide an answer within a few
+                    days.
                 </p>
                 <div class="boxes-wrapper">
-                    <div class="box box-1">
+                    <div class="contact">
                         <img src="./assets/icon.png" alt="email icon" />
                         <h2>Email Us</h2>
                         <p>
@@ -40,8 +41,13 @@
                             within a few days.
                         </p>
                         <a href="">Leave a message </a>
+                        <img
+                            src="./assets/icon-arrow-right.png"
+                            alt="arrow right"
+                            class="arrow-right"
+                        />
                     </div>
-                    <div class="box box-2">
+                    <div class="contact">
                         <img src="./assets/icon-2.png" alt="location icon" />
                         <h2>Drop In Us</h2>
                         <p>
@@ -49,8 +55,13 @@
                             details of your question.
                         </p>
                         <a href="">Get Directions </a>
+                        <img
+                            src="./assets/icon-arrow-right.png"
+                            alt="arrow right"
+                            class="arrow-right"
+                        />
                     </div>
-                    <div class="box box-3">
+                    <div class="contact">
                         <img src="./assets/icon-3.png" alt="call icon" />
                         <h2>Call any time</h2>
                         <p>
@@ -64,47 +75,42 @@
         </section>
         <section id="form-section">
             <div class="container">
-                <h2 class="form-header">Leave a Message</h2>
-                <p class="form-p">
-                    Contact us if you have any questions about our company or
-                    products. We will try <br />
-                    to provide an answer within a few days.
-                </p>
-                <div class="form-inputs_wrapper">
-                    <input
-                        class="form-input form-input-1"
-                        type="text"
-                        placeholder="Your Name"
-                    />
+                <form class="form-content">
+                    <h2 class="form-header">Leave a Message</h2>
+                    <p class="form-text">
+                        Contact us if you have any questions about our company
+                        or products. We will try to provide an answer within a
+                        few days.
+                    </p>
+                    <div class="form-inputs_wrapper">
+                        <input
+                            class="form-input form-input-1"
+                            type="text"
+                            placeholder="Your Name"
+                        />
 
-                    <input
-                        class="form-input form-input-2"
-                        type="email"
-                        placeholder="Email Address"
-                    />
-                    <br />
+                        <input
+                            class="form-input form-input-2"
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                        <br />
+                        <input
+                            class="form-input form-input-3"
+                            type="text"
+                            placeholder="Company Name"
+                        />
 
-                    <input
-                        class="form-input form-input-3"
-                        type="text"
-                        placeholder="Company Name"
-                    />
+                        <input
+                            class="form-input form-input-4"
+                            type="number"
+                            placeholder="Contact Number"
+                        />
 
-                    <input
-                        class="form-input form-input-4"
-                        type="number"
-                        placeholder="Contact Number"
-                    />
-                    <br />
+                        >
+                        <textarea placeholder="How can we help"></textarea>
+                    </div>
 
-                    >
-                    <textarea
-                        placeholder="How can we help"
-                        cols="56"
-                        rows="14"
-                    ></textarea>
-                </div>
-                <div class="form-checkbox_wrapper">
                     <input
                         class="checkbox"
                         type="checkbox"
@@ -115,14 +121,14 @@
                     >
 
                     <button>Submit</button>
-                </div>
+                </form>
             </div>
         </section>
-        <footer>
+        <footer id="footer">
             <div class="container">
                 <div class="footer-content">
                     <div class="footer__brand">
-                        <img src="./assets/Logo.png" alt="Logo" />
+                        <img src="./assets/Logo.png" alt="Logo" class="logo" />
                         <p class="footer-text">
                             Move - Multipurpose Design Template will help you
                             develop your website design.
