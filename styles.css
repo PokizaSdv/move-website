@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Inter";
     src: url("./static/Inter-Bold.ttf") format("TrueType");
-    font-size: 700;
+    font-size: 70rem;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("./static/Inter-SemiBold.ttf") format("TrueType");
-    font-size: 600;
+    font-size: 60rem;
 }
 
 @font-face {
     font-family: "Inter";
     src: url("./static/Inter-Medium.ttf") format("TrueType");
-    font-size: 400;
+    font-size: 40rem;
 }
 
 * {
@@ -23,29 +23,34 @@
     font-family: "Inter";
 }
 
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 body {
     font-size: 0;
     background: var(--bg-3, #fafbfc);
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 0 auto;
 }
 
 /* Header - section */
-header {
-    padding: 20px 100px;
+#header {
+    padding: 4rem 10rem;
 }
-header img {
-    width: 182px;
-    height: auto;
+
+.logo {
+    height: 5.4rem;
+    width: auto;
     display: inline-block;
     vertical-align: middle;
 }
 
 nav {
-    width: calc(100% - 182px);
+    width: calc(100% - 18.2rem);
     display: inline-block;
     vertical-align: middle;
     text-align: right;
@@ -54,7 +59,7 @@ nav {
 ul {
     list-style-type: none;
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 5rem;
 }
 
 li {
@@ -62,197 +67,208 @@ li {
 }
 
 li:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 5rem;
 }
 
 li a {
     color: var(--text-3, #8a94a6);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 2.4rem;
     text-decoration: none;
 }
 
 button {
-    /* width: calc(((179 * 100) / 1440) * 1%); */
-    /* height: calc((57 * 100) * 1%); */
-    border-radius: 10px;
-    padding: 16px 33px;
+    border-radius: 1rem;
+    padding: 1.6rem 3.3rem;
     background: var(--primary-1, #377dff);
     color: var(--text-5, #fff);
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 2.4rem;
     border: none;
     cursor: pointer;
 }
 
 /* Hero section */
-
 #hero-section {
-    padding: 108px 100px;
+    padding: 10.8rem 10rem;
 }
+
 #hero-section h1 {
-    margin-top: 108px;
-    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
     text-align: center;
     color: var(--text-1, #323b4b);
-    font-size: 60px;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 73px;
+    line-height: 7.3rem;
 }
 
 .hero-text {
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
     color: var(--text-3, #8a94a6);
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 35px;
-    margin-bottom: 57px;
+    line-height: 3.5rem;
+    margin-bottom: 5.7rem;
 }
 
-.box {
-    width: calc((100% - 64px) / 3);
-    border-radius: 15px;
+.contact {
+    width: calc((100% - 6.4rem) / 3);
+    border-radius: 1.5rem;
     background: var(--bg-4, #fff);
     display: inline-block;
-    padding: 41px 31px;
+    padding: 4.1rem 3.1rem;
+    vertical-align: top;
 }
 
-.box-1,
-.box-2 {
-    margin-right: 32px;
+.contact:not(:last-child) {
+    margin-right: 3.2rem;
 }
 
-.box img {
-    margin-bottom: 36px;
+.contact img {
+    margin-bottom: 3.6rem;
 }
-.box h2 {
+
+.contact h2 {
     color: var(--text-1, #323b4b);
-    font-size: 28px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 34px;
-    margin-bottom: 16px;
-}
-.box p {
-    color: var(--text-3, #8a94a6);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: start;
-    margin-bottom: 16px;
+    line-height: 3.4rem;
+    margin-bottom: 1.6rem;
 }
 
-.box a {
+.contact p {
+    color: var(--text-3, #8a94a6);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: start;
+    margin-bottom: 1.6rem;
+}
+
+.contact a {
     color: var(--primary-1, #377dff);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 2.4rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3.2rem;
+}
+.arrow-right {
+    height: 1.6rem;
+    width: 2rem;
 }
 
 /* Form Section */
-
 #form-section {
-    padding: 120px 0;
+    padding: 12rem 10rem;
 }
+.form-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .form-header {
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
     color: var(--text-1, #323b4b);
-    font-size: 48px;
+    font-size: 4.8rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 5.8rem;
     text-align: center;
 }
 
-.form-p {
+.form-text {
+    margin: 0 auto;
     color: var(--text-3, #8a94a6);
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 35px;
-    text-align: center;
-    margin-bottom: 52px;
+    line-height: 3.5rem;
+    margin-bottom: 5.2rem;
 }
+
 .form-inputs_wrapper {
     text-align: center;
-    position: relative;
 }
 
 .form-input {
-    /* width: 391px;
-    height: 65px; */
-    border-radius: 10px;
-    border: 2px solid lightgray;
+    width: calc((100% - 3.2rem) / 2);
+    border-radius: 1rem;
+    border: 0.2rem solid lightgray;
     background: var(--bg-4, #fff);
-    padding: 22px 25px;
+    padding: 2.2rem 2.5rem;
     color: var(--text-4, #b0b7c3);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 2.4rem;
+    margin-bottom: 4.2rem;
 }
 
 .form-input-1,
 .form-input-3 {
-    margin-right: 33px;
-    margin-bottom: 43px;
+    margin-right: 3.2rem;
 }
-
 textarea {
-    border-radius: 10px;
-    border: 2px solid lightgray;
+    resize: none;
+    border-radius: 1rem;
+    border: 0.2rem solid lightgray;
     background: var(--bg-4, #fff);
     color: var(--text-4, #b0b7c3);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    padding: 24px;
-    margin-bottom: 43px;
-}
-
-.form-checkbox_wrapper {
-    text-align: center;
+    line-height: 2.4rem;
+    padding: 2.4rem;
+    margin-bottom: 4.2rem;
+    width: 100%;
+    height: 29.6rem;
 }
 
 .checkbox {
-    width: 34px;
-    height: 33px;
+    width: 3.2rem;
+    height: 3.2rem;
     background-color: var(--secondary-1, #e5f1ff);
     display: inline-block;
-    margin-right: 24px;
-    vertical-align: middle;
+    margin-right: 2.4rem;
+    vertical-align: top;
+    /* text-align: left; */
 }
 
 label {
     color: var(--text-3, #8a94a6);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 2.4rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 #form-section button {
-    margin-left: 146px;
+    /* margin-left: 14.6rem; */
+    text-align: right;
+    vertical-align: middle;
 }
 
 /* Footer */
-
-footer {
-    padding: 142px 100px;
+#footer {
+    padding: 14.2rem 10rem;
 }
 
 .footer__brand,
@@ -263,51 +279,55 @@ footer {
     display: inline-block;
     vertical-align: top;
 }
+
 .footer__brand {
-    width: calc((100% - 352px) * 0.3);
+    width: calc((100% - 36rem) * 0.35);
 }
+
 .footer-content > *:not(:first-child) {
-    width: calc(((100% - 352px) * 0.7) / 4);
+    width: calc(((100% - 36rem) * 0.65) / 4);
 }
 
 .footer-content > *:not(:last-child) {
-    margin-right: 88px;
+    margin-right: 9rem;
 }
+
 .footer-text {
     color: var(--text-3, #8a94a6);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 35px;
-    margin-bottom: 28px;
+    line-height: 3.5rem;
+    margin-bottom: 2.8rem;
 }
+
 dt {
     color: var(--text-1, #323b4b);
-    font-size: 24px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 29px;
-    margin-bottom: 28px;
+    line-height: 2.9rem;
+    margin-bottom: 2.8rem;
 }
 
 dd {
     color: var(--text-3, #8a94a6);
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 19px;
+    line-height: 2.4rem;
+    margin-bottom: 1.9rem;
 }
 
 .footer__brand img {
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
 }
 
 .last-text {
     color: var(--text-3, #8a94a6);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px;
-    margin-top: 62px;
+    line-height: 2.2rem;
+    margin-top: 6.2rem;
 }

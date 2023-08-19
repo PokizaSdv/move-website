@@ -1,0 +1,126 @@
+@media (max-width: 1100px) {
+    #header,
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-right: 7.5rem;
+        padding-left: 7.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+
+    #header,
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+@media (max-width: 900px) {
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    nav {
+        display: none;
+    }
+    .footer__brand {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer-content > *:not(:first-child) {
+        width: calc(((100% - 27rem) * 0.65) / 3);
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-text {
+        width: 80%;
+    }
+    .contact {
+        width: calc((100% - 3.2rem) / 2);
+    }
+    .contact:first-child {
+        margin-bottom: 3.2rem;
+    }
+    .contact:nth-child(2) {
+        margin-right: 0;
+    }
+    .contact:last-child {
+        display: block;
+        margin: 0 auto;
+    }
+    .form-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #header,
+    #hero-section,
+    #form-section,
+    #footer {
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+    .logo {
+        height: 4.4rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    #form-section {
+        border-bottom: 1px solid hsl(219, 14%, 95%);
+    }
+
+    .contact {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .contact:nth-child(2) {
+        margin-bottom: 3.2rem;
+    }
+    .form-content {
+        width: 100%;
+    }
+    .form-input {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 3.2rem;
+    }
+    .checkbox {
+        margin-right: 1.6rem;
+    }
+    label {
+        margin-bottom: 3.2rem;
+    }
+    button {
+        display: block;
+    }
+    .footer-content > *:not(:first-child) {
+        width: calc(((100% - 5rem) * 0.7) / 2);
+    }
+    .footer-content > *:not(:last-child) {
+        margin-right: 5rem;
+    }
+    .footer-content:nth-child(3) {
+        margin-right: 0px;
+    }
+    dt {
+        font-size: 2rem;
+    }
+    dd {
+        font-size: 1.6rem;
+    }
+}
